@@ -4,9 +4,11 @@
  * @version 2017.09.09
  */
 
+import CIDialog from './CIDialog.vue'
 import CIModal from './CIModal.vue'
 
 const components = [
+  CIDialog,
   CIModal
 ]
 
@@ -15,6 +17,7 @@ const CIModals = {
   version: '1.0.0',
   plugin: plugin,
 
+  CIDialog,
   CIModal
 }
 

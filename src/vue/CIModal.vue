@@ -1,6 +1,6 @@
 <template lang="pug">
 transition(name="ci-modal")
-  div.ci-modal__mask
+  div.ci-modal__mask(@click="$emit('click')")
     div.ci-modal__content
       slot
 </template>

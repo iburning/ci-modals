@@ -31,9 +31,9 @@ const router = new VueRouter({
     },
 
     {
-      name: 'Modal',
-      path: '/modal',
-      component: resolve => require(['./views/Modal.vue'], resolve)
+      name: 'Modals',
+      path: '/modals',
+      component: resolve => require(['./views/Modals.vue'], resolve)
     }
   ]
 })

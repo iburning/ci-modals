@@ -1,0 +1,43 @@
+/**
+ * @fileoverview ci-dialog
+ * @author burning (www.cafeinit.com)
+ * @version 2017.07.31
+ */
+
+.@{NS}dialog {
+  background-color: @COLOR_WHITE;
+  width: 80%;
+  max-width: 640 * @REM;
+  margin: 0 auto;
+
+  &_border {
+    border: 1px solid @BORDER_COLOR;
+  }
+
+  &_radius {
+    border-radius: @RADIUS;
+  }
+
+  &_raised {
+    .raised()
+  }
+
+  &__title,
+  &__content,
+  &__actions {
+    padding: @PADDING;
+  }
+
+  &__title {
+    padding-bottom: 0;
+
+    h3 {
+      .title(@FONT_SIZE_BIG, @COLOR_GRAY_DARKER);
+    }
+  }
+
+  &__actions {
+    padding-top: 0;
+    text-align: right;
+  }
+}

@@ -4,8 +4,8 @@
 
     ci-list
       ci-list-body
-        ci-list-cell(title="Modal" extend-icon="chevron_right"
-          @click="toUrl('modal')")
+        ci-list-cell(title="Modals" extend-icon="chevron_right"
+          @click="toUrl('modals')")
 </template>
 
 <script>
