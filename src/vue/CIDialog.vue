@@ -1,15 +1,15 @@
 <template lang="pug">
 ci-modal(@click="$emit('click-mask')")
-  div.ci-dialog(@click.stop="")
+  div.ci-dialog.ci-dialog_radius(@click.stop="")
     div.ci-dialog__title(v-if="title")
       h3 {{title}}
     div.ci-dialog__content
       slot {{content}}
     div.ci-dialog__actions
       ci-button(v-if="cancelText"
-        color="primary" modifier="radius" :text="cancelText"
+        color="primary" modifier="border flat radius" :text="cancelText"
         @click="$emit('cancel')")
-      ci-button(color="primary" modifier="radius" :text="okText"
+      ci-button(color="primary" modifier="border flat radius" :text="okText"
         @click="$emit('ok')")
 </template>
 

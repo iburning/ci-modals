@@ -1,5 +1,5 @@
 <template lang="pug">
-transition(name="ci-modal")
+transition(name="ci-modal" @after-enter="$emit('after-enter')")
   div.ci-modal__mask(@click="$emit('click')")
     div.ci-modal__content
       slot

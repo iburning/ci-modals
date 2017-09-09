@@ -34,6 +34,12 @@ const router = new VueRouter({
       name: 'Modals',
       path: '/modals',
       component: resolve => require(['./views/Modals.vue'], resolve)
+    },
+
+    {
+      name: 'Toast',
+      path: '/toast',
+      component: resolve => require(['./views/Toast.vue'], resolve)
     }
   ]
 })

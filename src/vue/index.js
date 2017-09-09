@@ -6,10 +6,12 @@
 
 import CIDialog from './CIDialog.vue'
 import CIModal from './CIModal.vue'
+import CIToast from './CIToast.vue'
 
 const components = [
   CIDialog,
-  CIModal
+  CIModal,
+  CIToast
 ]
 
 const CIModals = {
@@ -18,7 +20,8 @@ const CIModals = {
   plugin: plugin,
 
   CIDialog,
-  CIModal
+  CIModal,
+  CIToast
 }
 
 if (window.Vue) {

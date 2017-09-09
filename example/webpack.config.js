@@ -55,7 +55,7 @@ module.exports = {
     historyApiFallback: true,
     noInfo: true,
     contentBase: './dist',
-    // host: config.host,
+    host: process.env.LOCALHOST || 'localhost',
     // port: config.port
   },
   performance: {
